@@ -1,0 +1,6 @@
+{
+  "name": "BUY NEST - Premium Online Shopping Pakistan",
+  "description": "Discover fashion, electronics, beauty, perfumes, home essentials, and more. Easy WhatsApp ordering with delivery across Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
