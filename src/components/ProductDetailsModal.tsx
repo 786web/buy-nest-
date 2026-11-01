@@ -117,7 +117,12 @@ export const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
                   src={product.images[selectedImageIndex] || product.images[0]}
                   alt={product.name}
                   className="w-full h-full object-cover object-center"
-                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const img = e.currentTarget;
+                    if (!img.src.includes('/images/hero.jpg')) {
+                      img.src = '/images/hero.jpg';
+                    }
+                  }}
                 />
 
                 {product.discountPercent && (
@@ -144,7 +149,12 @@ export const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
                         src={img}
                         alt={`Thumbnail ${idx + 1}`}
                         className="w-full h-full object-cover"
-                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (!target.src.includes('/images/hero.jpg')) {
+                            target.src = '/images/hero.jpg';
+                          }
+                        }}
                       />
                     </button>
                   ))}

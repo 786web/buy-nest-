@@ -48,9 +48,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenDetails
           alt={product.name}
           className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out"
           loading="lazy"
-          referrerPolicy="no-referrer"
           onError={(e) => {
-            (e.currentTarget as HTMLElement).style.opacity = '0.7';
+            const img = e.currentTarget;
+            if (!img.src.includes('/images/hero.jpg')) {
+              img.src = '/images/hero.jpg';
+            }
           }}
         />
 

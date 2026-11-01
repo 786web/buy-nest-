@@ -87,9 +87,11 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
                     alt={cat.name}
                     className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out"
                     loading="lazy"
-                    referrerPolicy="no-referrer"
                     onError={(e) => {
-                      (e.currentTarget as HTMLElement).style.display = 'none';
+                      const img = e.currentTarget;
+                      if (!img.src.includes('/images/hero.jpg')) {
+                        img.src = '/images/hero.jpg';
+                      }
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-300" />

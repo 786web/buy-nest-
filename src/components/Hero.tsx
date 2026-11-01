@@ -101,11 +101,14 @@ export const Hero: React.FC<HeroProps> = ({ onShopClick, onExploreCategory }) =>
               {/* Main Showcase Image Container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-zinc-100 aspect-4/3 lg:aspect-1/1 group">
                 <img
-                  src="/src/assets/images/hero_shopping_showcase_1793517351310.jpg"
+                  src="/images/hero.jpg"
                   alt="BUY NEST Luxury Showcase - Handbags, Perfumes, Electronics and Essentials"
                   className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
                   loading="eager"
+                  onError={(e) => {
+                    e.currentTarget.src = '/src/assets/images/hero_shopping_showcase_1793517351310.jpg';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 via-transparent to-transparent pointer-events-none" />
 

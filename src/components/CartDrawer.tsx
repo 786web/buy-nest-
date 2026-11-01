@@ -112,7 +112,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       src={item.product.images[0]}
                       alt={item.product.name}
                       className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.src.includes('/images/hero.jpg')) {
+                          target.src = '/images/hero.jpg';
+                        }
+                      }}
                     />
                   </div>
 

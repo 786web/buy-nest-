@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     slug: 'fashion',
     iconName: 'Shirt',
     description: 'Designer kurtas, pret wear, trendy casuals & premium apparel.',
-    image: '/src/assets/images/category_fashion_collection_1793517352297.jpg',
+    image: '/images/fashion.jpg',
     featured: true,
   },
   {
@@ -16,7 +16,7 @@ export const CATEGORIES: Category[] = [
     slug: 'electronics',
     iconName: 'Smartphone',
     description: 'Smart watches, true wireless earbuds, power banks & smart accessories.',
-    image: '/src/assets/images/category_electronics_gadgets_1793517352634.jpg',
+    image: '/images/electronics.jpg',
     featured: true,
   },
   {
@@ -25,7 +25,7 @@ export const CATEGORIES: Category[] = [
     slug: 'beauty',
     iconName: 'Sparkles',
     description: 'Organic serums, revitalizing skincare essentials & hair care.',
-    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80',
+    image: '/images/beauty.jpg',
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ export const CATEGORIES: Category[] = [
     slug: 'home-kitchen',
     iconName: 'Home',
     description: 'Modern cookware, aesthetic dining, cozy bedding & smart gadgets.',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80',
+    image: '/images/home.jpg',
     featured: true,
   },
   {
@@ -43,7 +43,7 @@ export const CATEGORIES: Category[] = [
     slug: 'shoes',
     iconName: 'Footprints',
     description: 'Formal oxfords, casual sneakers, running trainers & daily loafers.',
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80',
+    image: '/images/shoes.jpg',
     featured: true,
   },
   {
@@ -52,7 +52,7 @@ export const CATEGORIES: Category[] = [
     slug: 'bags',
     iconName: 'Briefcase',
     description: 'Luxury shoulder totes, leather backpacks, clutches & crossbodies.',
-    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80',
+    image: '/images/bags.jpg',
     featured: true,
   },
   {
@@ -61,7 +61,7 @@ export const CATEGORIES: Category[] = [
     slug: 'perfumes',
     iconName: 'Droplet',
     description: 'Long-lasting oriental ouds, floral French bouquets & fresh citrus notes.',
-    image: '/src/assets/images/category_perfume_luxury_1793517353338.jpg',
+    image: '/images/perfumes.jpg',
     featured: true,
   },
   {
@@ -70,7 +70,7 @@ export const CATEGORIES: Category[] = [
     slug: 'grocery',
     iconName: 'ShoppingBag',
     description: 'Premium dry fruits, organic Pakistani honey, spices & tea blends.',
-    image: 'https://images.unsplash.com/photo-1506484381205-f7945653044d?auto=format&fit=crop&w=600&q=80',
+    image: '/images/grocery.jpg',
   },
   {
     id: 'toys',
@@ -78,7 +78,7 @@ export const CATEGORIES: Category[] = [
     slug: 'toys',
     iconName: 'Gamepad2',
     description: 'Educational puzzles, RC cars, plush companions & creative blocks.',
-    image: 'https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=600&q=80',
+    image: '/images/toys.jpg',
   },
   {
     id: 'sports',
@@ -86,7 +86,7 @@ export const CATEGORIES: Category[] = [
     slug: 'sports-fitness',
     iconName: 'Dumbbell',
     description: 'Resistance bands, cricket gear, yoga mats & gym accessories.',
-    image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80',
+    image: '/images/sports.jpg',
   },
 ];
 
@@ -108,8 +108,8 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     sku: 'BN-FASH-01',
     images: [
-      '/src/assets/images/category_fashion_collection_1793517352297.jpg',
-      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80',
+      '/images/fashion.jpg',
+      '/images/fashion-alt.jpg',
     ],
     description:
       'Impeccably tailored velvet pret kurta adorned with fine zari embroidery along the neckline and cuffs. Finished with delicate tilla accents and organza lace borders.',
@@ -148,8 +148,8 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     sku: 'BN-FASH-02',
     images: [
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80',
-      '/src/assets/images/category_fashion_collection_1793517352297.jpg',
+      '/images/fashion-alt.jpg',
+      '/images/fashion.jpg',
     ],
     description:
       'Ultra-breathable linen 2-piece co-ord set featuring a relaxed-fit button-down top with matching tapered culottes. Designed for stylish comfort in warm Pakistani weather.',
@@ -189,8 +189,8 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     sku: 'BN-ELEC-01',
     images: [
-      '/src/assets/images/category_electronics_gadgets_1793517352634.jpg',
-      'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=700&q=80',
+      '/images/electronics.jpg',
+      '/images/electronics-alt.jpg',
     ],
     description:
       'Experience immersive high-fidelity audio with active noise cancellation up to 35dB, 4-mic ENC for crystal-clear Pakistani network calls, and up to 38 hours of total battery life with Type-C quick charge.',
@@ -229,8 +229,8 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     sku: 'BN-ELEC-02',
     images: [
-      '/src/assets/images/category_electronics_gadgets_1793517352634.jpg',
-      'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=700&q=80',
+      '/images/electronics-alt.jpg',
+      '/images/electronics.jpg',
     ],
     description:
       'Stunning 1.96-inch HD AMOLED display with vivid 1000 nits brightness, metallic aerospace alloy frame, continuous 24/7 heart-rate and SpO2 tracking, and direct Bluetooth dialer.',
@@ -271,8 +271,8 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     sku: 'BN-PERF-01',
     images: [
-      '/src/assets/images/category_perfume_luxury_1793517353338.jpg',
-      'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=80',
+      '/images/perfumes.jpg',
+      '/images/perfumes-alt.jpg',
     ],
     description:
       'A majestic signature scent opening with crisp Italian bergamot and pink pepper, blossoming into a heart of damask rose and velvet cedarwood, grounded in warm ambergris and Cambodian oud.',
@@ -306,8 +306,8 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     sku: 'BN-PERF-02',
     images: [
-      'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=80',
-      '/src/assets/images/category_perfume_luxury_1793517353338.jpg',
+      '/images/perfumes-alt.jpg',
+      '/images/perfumes.jpg',
     ],
     description:
       'Pure alcohol-free concentrated perfume oil extracted from white musk, soft creamy floral petals, and fresh dew. Velvet smooth application that stays for days.',
@@ -342,8 +342,8 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     sku: 'BN-BAG-01',
     images: [
-      '/src/assets/images/hero_shopping_showcase_1793517351310.jpg',
-      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80',
+      '/images/bags.jpg',
+      '/images/showcase-alt.jpg',
     ],
     description:
       'A masterpiece crafted from top-grain pebbled leather with 24k gold-plated brass lock hardware. Includes a silk twill printed scarf handle wrap and a detachable adjustable crossbody strap.',
@@ -380,7 +380,8 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     sku: 'BN-BAG-02',
     images: [
-      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80',
+      '/images/bags.jpg',
+      '/images/fashion-alt.jpg',
     ],
     description:
       'Engineered for Pakistani daily commuters and professionals. Features a dedicated 15.6-inch shockproof laptop compartment, external USB charging port, hidden passport pocket, and rainproof ballistic fabric.',
@@ -419,8 +420,8 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     sku: 'BN-SHOE-01',
     images: [
-      'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80',
-      'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=700&q=80',
+      '/images/shoes.jpg',
+      '/images/lifestyle-alt.jpg',
     ],
     description:
       'Authentic Charsadda cut Peshawari chappal hand-stitched by generational master artisans. Genuine cowhide leather upper resting on a durable tyre-sole base designed for lifelong durability.',
@@ -458,7 +459,8 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     sku: 'BN-SHOE-02',
     images: [
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80',
+      '/images/shoes.jpg',
+      '/images/sports.jpg',
     ],
     description:
       'Engineered knit mesh running sneakers with dynamic energy return foam soles. Ultra-lightweight 210g design gives responsive spring with every stride.',
@@ -498,8 +500,8 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     sku: 'BN-BEAU-01',
     images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80',
-      'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=80',
+      '/images/beauty.jpg',
+      '/images/perfumes-alt.jpg',
     ],
     description:
       'Infused with pure 24-karat bio-gold flakes, multi-molecular hyaluronic acid, and vitamin C. Plumps the skin, diminishes dullness, and delivers a radiant glass-skin glow.',
@@ -532,7 +534,8 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     sku: 'BN-BEAU-02',
     images: [
-      'https://images.unsplash.com/photo-1608248597359-07a828cb0df4?auto=format&fit=crop&w=700&q=80',
+      '/images/beauty.jpg',
+      '/images/fashion-alt.jpg',
     ],
     description:
       'Steam-distilled pure rosemary essential oil infused with cold-pressed castor, sweet almond, and black seed (Kalonji) oil. Clinically known to stimulate dormant hair follicles.',
@@ -566,7 +569,8 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     sku: 'BN-HOME-01',
     images: [
-      'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=700&q=80',
+      '/images/home.jpg',
+      '/images/hero.jpg',
     ],
     description:
       'Food-grade 304 stainless steel pour-over kettle with an ergonomic heat-resistant natural walnut handle and precision gooseneck spout for an even, balanced pour of tea or coffee.',
@@ -600,7 +604,8 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     sku: 'BN-HOME-02',
     images: [
-      'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80',
+      '/images/home.jpg',
+      '/images/showcase-alt.jpg',
     ],
     description:
       '360-degree rotating spice organizer crafted from Pakistani white marble and sustainably sourced acacia wood, complete with 12 lead-free borosilicate spice jars with airtight bamboo lids.',
@@ -633,7 +638,8 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     sku: 'BN-GROC-01',
     images: [
-      'https://images.unsplash.com/photo-1506484381205-f7945653044d?auto=format&fit=crop&w=700&q=80',
+      '/images/grocery.jpg',
+      '/images/home.jpg',
     ],
     description:
       'Fresh harvest from the valleys of Gilgit-Baltistan and Skardu. Features paper-shell light amber walnut halves and lightly Himalayan-salted roasted almonds packed in vacuum nitrogen-sealed jars.',
@@ -665,7 +671,8 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     sku: 'BN-GROC-02',
     images: [
-      'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=700&q=80',
+      '/images/grocery.jpg',
+      '/images/hero.jpg',
     ],
     description:
       'Unprocessed raw Sidr honey gathered from wild Beri tree blossoms in Karak, Khyber Pakhtunkhwa. Golden-amber hue, rich butterscotch undertones, with high medicinal properties.',
@@ -699,7 +706,8 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     sku: 'BN-TOYS-01',
     images: [
-      'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=700&q=80',
+      '/images/toys.jpg',
+      '/images/unboxing-alt.jpg',
     ],
     description:
       '2.4GHz remote control all-terrain 4WD buggy with anti-collision alloy shell, bionic spine mechanics for 360-degree flips, and rechargeable lithium battery with USB charger.',
@@ -735,7 +743,8 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     sku: 'BN-TOYS-02',
     images: [
-      'https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=700&q=80',
+      '/images/toys.jpg',
+      '/images/lifestyle-alt.jpg',
     ],
     description:
       'Develops cognitive spatial awareness and 3D geometric thinking. Strong rare-earth neodymium magnetic rods and steel spheres with non-toxic rounded ABS plastic casings.',
@@ -769,7 +778,8 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     sku: 'BN-SPORT-01',
     images: [
-      'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=700&q=80',
+      '/images/sports.jpg',
+      '/images/shoes.jpg',
     ],
     description:
       'Handcrafted in Sialkot, Pakistan—the sports manufacturing capital of the world. Selected Grade-1 cleft willow with 7-9 straight grains, massive 40mm contoured edges, and semi-oval cane handle.',
@@ -802,7 +812,8 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     sku: 'BN-SPORT-02',
     images: [
-      'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=700&q=80',
+      '/images/sports.jpg',
+      '/images/electronics.jpg',
     ],
     description:
       'Full home gym workout set stacking up to 150 lbs of resistance. Includes 5 color-coded 100% natural Malaysian latex tubes, cushioned foam handles, door anchor, ankle straps, and travel bag.',
