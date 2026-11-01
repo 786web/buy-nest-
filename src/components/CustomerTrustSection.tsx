@@ -61,10 +61,10 @@ export const CustomerTrustSection: React.FC = () => {
             return (
               <div
                 key={pillar.title}
-                className="bg-zinc-50/80 hover:bg-white rounded-2xl p-5 border border-zinc-200/80 hover:border-emerald-500/40 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                className="group bg-zinc-50/80 hover:bg-white rounded-2xl p-5 border border-zinc-200/80 hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between cursor-pointer"
               >
                 <div>
-                  <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center justify-center mb-4">
+                  <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-sm text-zinc-900 leading-snug mb-2">

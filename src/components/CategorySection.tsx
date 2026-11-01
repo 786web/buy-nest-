@@ -74,10 +74,10 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
               <button
                 key={cat.id}
                 onClick={() => onSelectCategory(cat.id)}
-                className={`group relative overflow-hidden rounded-2xl bg-white p-3.5 sm:p-4 text-left transition-all duration-300 border flex flex-col justify-between cursor-pointer ${
+                className={`group relative overflow-hidden rounded-2xl bg-white p-3.5 sm:p-4 text-left transition-all duration-300 border flex flex-col justify-between cursor-pointer hover:-translate-y-2 hover:shadow-xl ${
                   isSelected
                     ? 'border-emerald-600 ring-2 ring-emerald-600/20 shadow-md'
-                    : 'border-zinc-200/80 hover:border-emerald-500/50 hover:shadow-lg hover:-translate-y-1'
+                    : 'border-zinc-200/80 hover:border-emerald-500/50'
                 }`}
               >
                 {/* Image Aspect ratio container with overlay */}
@@ -85,18 +85,17 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
                   <img
                     src={cat.image}
                     alt={cat.name}
-                    className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out"
                     loading="lazy"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      // Fallback visual
                       (e.currentTarget as HTMLElement).style.display = 'none';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-300" />
 
-                  {/* Icon floating badge */}
-                  <div className="absolute top-2 right-2 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-white/90 backdrop-blur-xs text-emerald-800 flex items-center justify-center shadow-xs">
+                  {/* Icon floating badge with smooth animated transition */}
+                  <div className="absolute top-2 right-2 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-white/90 backdrop-blur-xs text-emerald-800 flex items-center justify-center shadow-xs group-hover:scale-110 group-hover:rotate-6 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
                     <IconComponent className="w-4 h-4" />
                   </div>
                 </div>

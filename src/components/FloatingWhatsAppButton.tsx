@@ -24,16 +24,17 @@ export const FloatingWhatsAppButton: React.FC = () => {
         </div>
       )}
 
-      {/* Floating Emerald Button */}
+      {/* Floating Emerald Button with dual animated pulse */}
       <a
         href={getGeneralWhatsAppSupportUrl()}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white shadow-xl shadow-emerald-700/30 flex items-center justify-center transition-all duration-300"
+        className="relative w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 active:scale-90 text-white shadow-xl shadow-emerald-700/40 flex items-center justify-center transition-all duration-300 hover:scale-105"
         aria-label="Chat and Order on WhatsApp"
         title="Direct WhatsApp Order Desk"
       >
-        <span className="absolute inset-0 rounded-full bg-emerald-500 animate-ping opacity-25" />
+        <span className="absolute inset-0 rounded-full bg-emerald-500 animate-ping opacity-30 pointer-events-none" />
+        <span className="absolute -inset-1 rounded-full bg-emerald-400 opacity-20 animate-pulse-subtle pointer-events-none" />
         <MessageCircle className="w-7 h-7 fill-white" />
       </a>
     </aside>

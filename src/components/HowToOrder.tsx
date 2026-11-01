@@ -73,17 +73,17 @@ export const HowToOrder: React.FC = () => {
             return (
               <div
                 key={item.stepNumber}
-                className="bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative group"
+                className="bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between relative group cursor-pointer"
               >
                 <div>
                   {/* Step Number & Icon Header */}
                   <div className="flex items-center justify-between mb-5">
                     <div
-                      className={`w-12 h-12 rounded-2xl flex items-center justify-center border shadow-2xs ${item.color}`}
+                      className={`w-12 h-12 rounded-2xl flex items-center justify-center border shadow-2xs group-hover:rotate-6 group-hover:scale-110 transition-all duration-300 ${item.color}`}
                     >
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-2xl font-black text-zinc-200 group-hover:text-emerald-300 transition-colors">
+                    <span className="text-2xl font-black text-zinc-200 group-hover:text-emerald-500 group-hover:scale-110 transition-all duration-300">
                       {item.stepNumber}
                     </span>
                   </div>

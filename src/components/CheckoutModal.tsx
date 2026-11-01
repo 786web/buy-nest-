@@ -237,7 +237,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
                   {isCouponApplied && (
                     <div className="flex items-center gap-1 font-semibold text-emerald-700">
                       <Tag className="w-3.5 h-3.5" />
-                      <span>Code MALIK applied: -Rs. {couponDiscount}</span>
+                      <span>Coupon Discount: -Rs. {couponDiscount}</span>
                     </div>
                   )}
                 </div>

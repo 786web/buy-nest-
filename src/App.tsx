@@ -7,7 +7,6 @@ import { CategorySection } from './components/CategorySection';
 import { ProductCatalog } from './components/ProductCatalog';
 import { HowToOrder } from './components/HowToOrder';
 import { DeliveryInfoSection } from './components/DeliveryInfoSection';
-import { SpecialDiscountBanner } from './components/SpecialDiscountBanner';
 import { CustomerTrustSection } from './components/CustomerTrustSection';
 import { Footer } from './components/Footer';
 import { ProductDetailsModal } from './components/ProductDetailsModal';
@@ -116,10 +115,7 @@ const AppContent: React.FC = () => {
           selectedCategoryId={selectedCategoryId}
         />
 
-        {/* 5. Special Discount Banner (MALIK coupon code) */}
-        <SpecialDiscountBanner />
-
-        {/* 6. Product Catalog Listing with Filters & Sorting */}
+        {/* 5. Product Catalog Listing with Filters & Sorting */}
         <ProductCatalog
           products={PRODUCTS}
           selectedCategoryId={selectedCategoryId}

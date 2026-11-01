@@ -130,7 +130,7 @@ export const Hero: React.FC<HeroProps> = ({ onShopClick, onExploreCategory }) =>
               </div>
 
               {/* Floating Highlight Card 1 (Top Left) */}
-              <div className="absolute -top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md border border-zinc-200/80 rounded-2xl p-3 shadow-xl hidden sm:flex items-center gap-3 animate-bounce-subtle">
+              <div className="absolute -top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md border border-zinc-200/80 rounded-2xl p-3 shadow-xl hidden sm:flex items-center gap-3 animate-float-slow">
                 <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-sm">
                   🚚
                 </div>
@@ -141,7 +141,7 @@ export const Hero: React.FC<HeroProps> = ({ onShopClick, onExploreCategory }) =>
               </div>
 
               {/* Floating Highlight Card 2 (Bottom Right) */}
-              <div className="absolute -bottom-5 -right-3 sm:-right-6 bg-white/95 backdrop-blur-md border border-zinc-200/80 rounded-2xl p-3 shadow-xl hidden sm:flex items-center gap-3">
+              <div className="absolute -bottom-5 -right-3 sm:-right-6 bg-white/95 backdrop-blur-md border border-zinc-200/80 rounded-2xl p-3 shadow-xl hidden sm:flex items-center gap-3 animate-float-reverse">
                 <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center">
                   <MessageCircle className="w-4 h-4 fill-white" />
                 </div>

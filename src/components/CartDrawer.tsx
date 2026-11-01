@@ -199,7 +199,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
             <div className="pt-3 border-t border-zinc-100">
               <label className="text-xs font-bold text-zinc-900 mb-1.5 flex items-center justify-between">
                 <span>Discount Coupon</span>
-                <span className="text-[11px] font-normal text-emerald-700">Code: MALIK (Rs. 100 OFF)</span>
+                <span className="text-[11px] font-normal text-zinc-500">Have a promo code?</span>
               </label>
 
               {isCouponApplied ? (
@@ -207,8 +207,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   <div className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600" />
                     <div>
-                      <p className="text-xs font-bold text-emerald-950">Code MALIK Applied</p>
-                      <p className="text-[11px] text-emerald-700">Congratulations! You saved Rs. 100 with code MALIK.</p>
+                      <p className="text-xs font-bold text-emerald-950">Promo Code Applied</p>
+                      <p className="text-[11px] text-emerald-700">Congratulations! You received your discount.</p>
                     </div>
                   </div>
                   <button
@@ -223,7 +223,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   <div className="relative flex-1">
                     <input
                       type="text"
-                      placeholder="Enter promo code (e.g. MALIK)"
+                      placeholder="Enter promo code"
                       value={inputCoupon}
                       onChange={(e) => setInputCoupon(e.target.value.toUpperCase())}
                       className="w-full pl-8 pr-3 py-2 text-xs uppercase tracking-wider rounded-xl border border-zinc-200 bg-white focus:outline-hidden focus:border-emerald-600"
@@ -271,7 +271,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </div>
               {isCouponApplied && (
                 <div className="flex justify-between text-emerald-700 font-semibold">
-                  <span>Coupon Discount (MALIK):</span>
+                  <span>Coupon Discount:</span>
                   <span className="tabular-nums">-Rs. {couponDiscount}</span>
                 </div>
               )}

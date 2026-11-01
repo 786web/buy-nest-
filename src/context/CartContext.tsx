@@ -181,10 +181,10 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (cleaned === VALID_COUPON_CODE) {
       setCouponCode(VALID_COUPON_CODE);
       setCouponError(null);
-      showToast('🎉 Congratulations! You saved Rs. 100 with code MALIK.');
+      showToast('🎉 Congratulations! Rs. 100 discount applied.');
       return true;
     } else {
-      setCouponError('Invalid coupon code. Try using code "MALIK" for Rs. 100 OFF!');
+      setCouponError('Invalid promo code. Please check and try again.');
       return false;
     }
   };
